@@ -1,0 +1,1392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0277A4790550C9885A6A0FC8B05B4C8F /* SimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE207975FE0BE56027FE1B9BEAE56EDA /* SimpleKeychain.framework */; };
+		04ECF5493FD821AF7C6700768C70D103 /* NSData+URLSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2341A9DDB40C34D6D0ADA024CC5E75F /* NSData+URLSafe.swift */; };
+		05F546945A9F17AF3C79FF32BCA35003 /* WebAuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C05A0973D894441FB2EE5BF641383F /* WebAuthError.swift */; };
+		0BAF2689B7C3B5EBB3C28A8D0B96F502 /* _ObjectiveAuthenticationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F31CDEDF10D8AEE44B4A992ACBB37EB /* _ObjectiveAuthenticationAPI.swift */; };
+		0D69B288E3DF9EC529ED53D58993D261 /* Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C096BC00E45DDB0502649BABC438741 /* Management.swift */; };
+		146DB6CD4E0C24807716DF21BEC65291 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5986BAC0119CED36C36DF885E71AB29E /* Result.swift */; };
+		1F00319D01F35714E76535CEF185CD1A /* SafariSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBB60A69322DB3E8A6707A46F7EFA24 /* SafariSession.swift */; };
+		2A81BAD44A4B2F85DA3F053D75A2428E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C191ED47476D26639D69D7AE817FF5EE /* Foundation.framework */; };
+		2CDCDAF8532BD25895575D799C6D6D23 /* UserPatchAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76A60EC219B79FE095EEFC5F9B2237F /* UserPatchAttributes.swift */; };
+		2D7798921216EB918BB3111009021E99 /* Auth0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A123DF795BC68E1F9D2047709DC6158C /* Auth0-dummy.m */; };
+		3081B9F899160D5B384D1D321CA0F584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C191ED47476D26639D69D7AE817FF5EE /* Foundation.framework */; };
+		30B4D1C14188E904B707CB0C5797857E /* CredentialsManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA2894BC380D86703176C37E7188EED /* CredentialsManagerError.swift */; };
+		315C3AF16DE36CF86A2E9FAC231E97DD /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9AC4C4C4EB70174491E3FA05782DE /* Loggable.swift */; };
+		34327D4D760B9D0C759C1B98F459326E /* A0ChallengeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4B1025BCDC723591723C8A518FDD79 /* A0ChallengeGenerator.m */; };
+		35259AE0BE931E8309F35ADFDA395E64 /* A0SimpleKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DA68702A47AF4005CBC2D02F469A3 /* A0SimpleKeychain.m */; };
+		37FCA8A33CE839FB0C7A0D0002839FAE /* Pods-GithubConnectUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 822594FA67B241E7D93E5CEF429A7DDA /* Pods-GithubConnectUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C6265F37507DDD88097BFDCDC18010F /* _ObjectiveManagementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B681C97F59CBF3C1CF6325671B8D95 /* _ObjectiveManagementAPI.swift */; };
+		426261FD4587C8CEA5A4ACE737F32677 /* SafariWebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9749AAF28ADB1E8B77E3D27B9A94F91 /* SafariWebAuth.swift */; };
+		428F673B1529BFDB126DF14391E6D840 /* JSONObjectPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F1B0A9F597E824DC2FE01245AD146E /* JSONObjectPayload.swift */; };
+		439D085597024C1139FD3614D9C65BB0 /* BioAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B4B1DF071CCEB408EB60BD9EBB91E0 /* BioAuthentication.swift */; };
+		43B51DA8FC1F6F9CCA4DA4A88246AD73 /* Telemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFEA4A5E45ACC9A5B91377425C3C71 /* Telemetry.swift */; };
+		47BCA3A2475C1A790CBB1E364F376D93 /* AuthSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5883B5093D9BD53D291C31E55AE47 /* AuthSession.swift */; };
+		480F559D2AEDD17CED11DA4E74DF33AE /* Auth0.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA37DF38518EC05EC89CF40558FEF8EF /* Auth0.swift */; };
+		48982F756C81C11B4BFD64C0F957D81B /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE71FFBED18A32C089FD28B794E5B638 /* CredentialsManager.swift */; };
+		4A31B167FAAE5AA974316442796FADF9 /* OAuth2Grant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69A3201A56A9E26C80E12ECE9BBD479 /* OAuth2Grant.swift */; };
+		4AACFF9ECA1D350A4FC368560600D1F3 /* SimpleKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3DE7393F6745B13F3944D395635C80 /* SimpleKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D26509839BF8C3F462EC660EA64AF81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C191ED47476D26639D69D7AE817FF5EE /* Foundation.framework */; };
+		4D7D2E081F7129FD3614661C78D6C9A8 /* Pods-GithubConnectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B044122D2FBCF59B353F89BC9A79E5AA /* Pods-GithubConnectTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		512807B3607345EEA2FF0CD3A546592E /* Pods-GithubConnect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E960163754C37768A2FBDC8A86793D89 /* Pods-GithubConnect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55CC922E98D39AAB859A03EF78DE6A78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C191ED47476D26639D69D7AE817FF5EE /* Foundation.framework */; };
+		58A0662F942C33CFC381C7491788E9FC /* WebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC6D76F90513736A08E07DAB1F042 /* WebAuth.swift */; };
+		5B9EB49BD07D384C756CF8AE763D8990 /* SimpleKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 488B2CDF831866937A4D5F18F3BB178F /* SimpleKeychain-dummy.m */; };
+		5F2D4A1E83FC2CA9D36C463DEDB5E54C /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6E03453E82281E12FC8313DDB2E386 /* LocalAuthentication.framework */; };
+		64B45E77A994F1D38D98B44015F72838 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA0E9B2414FF45349EBAF853003339 /* AuthProvider.swift */; };
+		683E5050572440F9BC27805579A51CD0 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F14DEACF6F3740A7B1E9032CEBB08 /* Identity.swift */; };
+		6A756A02A5F01FA596D35430FE5977E4 /* Auth0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4B707993E8CA11208DC76A2C5DDA31 /* Auth0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BC30DC29B04038247927EA95BF2D11E /* SilentSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A95E2D5A6C0C668721CC01BD42A205 /* SilentSafariViewController.swift */; };
+		75465D3E3E9D72FE1505DF41BF5E58A5 /* A0ChallengeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0948AF0C1096282A838351067F297E96 /* A0ChallengeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76928BBAAB9196F9E02D6A4CA31D8700 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF286D5B035D3992EACB4D4A8E40402 /* SafariServices.framework */; };
+		77D5D67C7153F40E106A1D525CF013DC /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3455F71A45487F9220EEBE669A283 /* Request.swift */; };
+		7CE4565EDB4D17746AA417ADDBE0A4E8 /* NSURL+Auth0.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7967CE68B3B58D299EF5288DF929E /* NSURL+Auth0.swift */; };
+		7E2C6240CF37669AAFD747AF8542FF0E /* SafariAuthenticationCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5554186FC4FA22819EDDF1CFE2F661D3 /* SafariAuthenticationCallback.swift */; };
+		7E969AC89932141AC0EAF175012D386C /* NSError+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361DEDED9C5EE9E0CEC6CE30B2B221 /* NSError+Helper.swift */; };
+		807DD8BA32337CF09209A64897A5A61D /* ManagementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A026654E444A6A54701C012315B93DE /* ManagementError.swift */; };
+		815613001D576C733FF1DA09F379587C /* Auth0.h in Headers */ = {isa = PBXBuildFile; fileRef = F1E3E87C99ACECE39F97CA97AD901DD3 /* Auth0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84266AD673AC1879458C37464A5B104E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6831F92AE5F3DDE18C998C60C8B41B8 /* UIKit.framework */; };
+		843D602F85E447205B7E6EBE186097FB /* SafariAuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0397F46B5DC27D2DE17DE3E97D34C9A7 /* SafariAuthenticationSession.swift */; };
+		86CCDC70A449C40FBB34A4C69F73D2AA /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B9B657706F94B817101A86E6DA685C /* Handlers.swift */; };
+		87C0FD66AA3D13B82B0C1F73A200AB70 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88D221917366D2890699DDD13CFFC8 /* Users.swift */; };
+		8856E7FA3CCB91185DAD9F90F3AC05E5 /* A0SimpleKeychain+KeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B1484B9BFB888B1D45783EC390AE3E /* A0SimpleKeychain+KeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89924167915AEC478B35BA1995474418 /* NSURLComponents+OAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1899E6D63D8349876F542FA1ECE7419 /* NSURLComponents+OAuth2.swift */; };
+		8E76E70FB2A9B7C51DE7D97921C411BD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FF886DBF1BA568FA64C26C85798F3D /* Response.swift */; };
+		90015E19F66DF35D3BF298A92649CD66 /* A0SimpleKeychain+KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCFB59A658962773E81E7A60EE3A99A /* A0SimpleKeychain+KeyPair.m */; };
+		96F0FE606D53294867D9D3823D5B91DF /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF9B95D2CCBF1F7E0CEAF8B4D726F9 /* ResponseType.swift */; };
+		A5F539131F78FAEAC350B4258474A8EE /* Pods-GithubConnect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1569CF6FEC20BEA8A0E3A353F9926A /* Pods-GithubConnect-dummy.m */; };
+		A645FB360FF4A041DDE2DE92554B0D78 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB090A52141BAD3669E298D3422C74D /* AuthenticationError.swift */; };
+		A67B3513A3790974948E5D2F1A9C1277 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93101036E89F8BC015AF7D600E59165 /* Authentication.swift */; };
+		B5148E705B70F73A12CDF406F01209AD /* AuthTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057A948DC3DAFBDE8EA153568710F63 /* AuthTransaction.swift */; };
+		B68FBB31889F3D86780A2E55BF43B777 /* Pods-GithubConnectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7397161F1286510AA3F3EDD54106FB /* Pods-GithubConnectUITests-dummy.m */; };
+		B83178B3BF3A6EE3A28E0AE70C6C2DDA /* A0SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D289B72038B0C047A73B57035F1581 /* A0SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9A8B54617C74E4231627A4EA0BB5D53 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7818A4EBB0DD78AFCB1CFD9A29B3AB /* Credentials.swift */; };
+		BA0912D93368F3E15B162B7A8663577B /* Auth0Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9B0D302BEABF3782436C68DDB1EB3 /* Auth0Authentication.swift */; };
+		CE39BFBA829AC058029986F8FA7712BF /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C982884387B4E9953492F323E89934 /* Requestable.swift */; };
+		CF4B9AAE61EE1A0478EC82703EACC9AF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB8C4AFCB6C405D374B9EAFE7A54E60 /* Profile.swift */; };
+		D01976371EC3556D39619630A2A136C8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C668E3241413DF73C0C32820B69AB /* UserInfo.swift */; };
+		D202972DC54DB7DC1C56312136421945 /* Pods-GithubConnectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B60297058E8C8A95606A2821E21B5C71 /* Pods-GithubConnectTests-dummy.m */; };
+		D3C8FD3AD8AC1AF9A03A16B85FF08BCB /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318F7F886789B3B37FC901860CDC2CB4 /* TransactionStore.swift */; };
+		D5BCF4F199AA62337E0488226F5BE7A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C191ED47476D26639D69D7AE817FF5EE /* Foundation.framework */; };
+		D9DD1076A2E60142BE41AEC004EB2BBD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07839450BF23F52920F2F8F449305724 /* Date.swift */; };
+		E0853938BC1F1C1F96A4C47F330EBA1E /* ControllerModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6524F31A9E11BFAE657F171666607E /* ControllerModalPresenter.swift */; };
+		E5D69A1C1B4A829CBBC2865EF032841F /* SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 600E9DC226DCAF5EB294E1D256D7623A /* SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EED1A47CD25F9C958ACAD2850C22D9F3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600BF6EA7DA98029BD33B095E5E1A2FD /* Logger.swift */; };
+		F0F27DC8E50155F4E7867139A591BCA0 /* NativeAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CEAEEC3021D707C2D44396BC9E734B /* NativeAuth.swift */; };
+		F44163A660DDF323E6D48ABC552D154E /* Auth0Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34BCD363C47233EA81741A07D4684A /* Auth0Error.swift */; };
+		FA996165542389E8AB1521ABF09E0D1F /* _ObjectiveWebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5C485CD558DB2B69E96B222AB2CE44 /* _ObjectiveWebAuth.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		299F42802B2AF2558605471F929BD763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61A8675CA69EB54C341552FFA49ECB26;
+			remoteInfo = SimpleKeychain;
+		};
+		4BC750DEABA9AF7718A1A954AEB130A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1775F3D547A3D1360B8FD46F0BC0B7A6;
+			remoteInfo = "Pods-GithubConnect";
+		};
+		AF71A1D25DC58C82AA48620D074B6A18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1775F3D547A3D1360B8FD46F0BC0B7A6;
+			remoteInfo = "Pods-GithubConnect";
+		};
+		DDE53E3E8C5CF35801A616552125B294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB4CE40D56D9FD503276EA88625B0981;
+			remoteInfo = Auth0;
+		};
+		E744955F8527BF1D4AB5565BBD1F7441 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61A8675CA69EB54C341552FFA49ECB26;
+			remoteInfo = SimpleKeychain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005C5D39A903BF317368995779C16B12 /* Pods-GithubConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GithubConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0397F46B5DC27D2DE17DE3E97D34C9A7 /* SafariAuthenticationSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariAuthenticationSession.swift; path = Auth0/SafariAuthenticationSession.swift; sourceTree = "<group>"; };
+		0546C171B272AA8F86269A3C9A880394 /* SimpleKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKeychain.xcconfig; sourceTree = "<group>"; };
+		07839450BF23F52920F2F8F449305724 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Auth0/Date.swift; sourceTree = "<group>"; };
+		0948AF0C1096282A838351067F297E96 /* A0ChallengeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ChallengeGenerator.h; path = Auth0/A0ChallengeGenerator.h; sourceTree = "<group>"; };
+		0B866626B306058F865697B6D6E9BCB8 /* Auth0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Auth0.xcconfig; sourceTree = "<group>"; };
+		0DBA0E9B2414FF45349EBAF853003339 /* AuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthProvider.swift; path = Auth0/AuthProvider.swift; sourceTree = "<group>"; };
+		1CE3455F71A45487F9220EEBE669A283 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Auth0/Request.swift; sourceTree = "<group>"; };
+		1E7FDFB8D0239CD31BE2F5C5F3599EA7 /* Pods_GithubConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GithubConnectUITests.framework; path = "Pods-GithubConnectUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E8E62C8B9D88A11BC0374ED54435ACB /* Pods-GithubConnectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GithubConnectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		25B9B657706F94B817101A86E6DA685C /* Handlers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Handlers.swift; path = Auth0/Handlers.swift; sourceTree = "<group>"; };
+		2A2F2A1B204F7C761A700C39AC9F6D42 /* Pods-GithubConnectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GithubConnectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2ACFEA4A5E45ACC9A5B91377425C3C71 /* Telemetry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Telemetry.swift; path = Auth0/Telemetry.swift; sourceTree = "<group>"; };
+		2B5DA68702A47AF4005CBC2D02F469A3 /* A0SimpleKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SimpleKeychain.m; path = SimpleKeychain/A0SimpleKeychain.m; sourceTree = "<group>"; };
+		2BB090A52141BAD3669E298D3422C74D /* AuthenticationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationError.swift; path = Auth0/AuthenticationError.swift; sourceTree = "<group>"; };
+		2C096BC00E45DDB0502649BABC438741 /* Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Management.swift; path = Auth0/Management.swift; sourceTree = "<group>"; };
+		2CFDA723D4EC0D3851894A4494797A25 /* Auth0-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Auth0-Info.plist"; sourceTree = "<group>"; };
+		2D77F2883E99F7AD5C50B7B0395455C7 /* Pods-GithubConnect-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GithubConnect-acknowledgements.plist"; sourceTree = "<group>"; };
+		318F7F886789B3B37FC901860CDC2CB4 /* TransactionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionStore.swift; path = Auth0/TransactionStore.swift; sourceTree = "<group>"; };
+		3503284DCF92939B51EED12185BFFF12 /* Pods_GithubConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GithubConnectTests.framework; path = "Pods-GithubConnectTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3661D51CF686BEDEB5BE2714543AE9C1 /* Pods-GithubConnectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GithubConnectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		383F06164AFD1DC60D29A15E6067D4AF /* Pods-GithubConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GithubConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		3CF286D5B035D3992EACB4D4A8E40402 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		3D7397161F1286510AA3F3EDD54106FB /* Pods-GithubConnectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GithubConnectUITests-dummy.m"; sourceTree = "<group>"; };
+		3F6E03453E82281E12FC8313DDB2E386 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/LocalAuthentication.framework; sourceTree = DEVELOPER_DIR; };
+		4057A948DC3DAFBDE8EA153568710F63 /* AuthTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthTransaction.swift; path = Auth0/AuthTransaction.swift; sourceTree = "<group>"; };
+		488B2CDF831866937A4D5F18F3BB178F /* SimpleKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleKeychain-dummy.m"; sourceTree = "<group>"; };
+		4D721B27826FB5D8E71CCF3B102822DA /* SimpleKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleKeychain.framework; path = SimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F31CDEDF10D8AEE44B4A992ACBB37EB /* _ObjectiveAuthenticationAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveAuthenticationAPI.swift; path = Auth0/_ObjectiveAuthenticationAPI.swift; sourceTree = "<group>"; };
+		4F4B707993E8CA11208DC76A2C5DDA31 /* Auth0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Auth0-umbrella.h"; sourceTree = "<group>"; };
+		53DDC6D76F90513736A08E07DAB1F042 /* WebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAuth.swift; path = Auth0/WebAuth.swift; sourceTree = "<group>"; };
+		54FF9B95D2CCBF1F7E0CEAF8B4D726F9 /* ResponseType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseType.swift; path = Auth0/ResponseType.swift; sourceTree = "<group>"; };
+		5554186FC4FA22819EDDF1CFE2F661D3 /* SafariAuthenticationCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariAuthenticationCallback.swift; path = Auth0/SafariAuthenticationCallback.swift; sourceTree = "<group>"; };
+		5986BAC0119CED36C36DF885E71AB29E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Auth0/Result.swift; sourceTree = "<group>"; };
+		600BF6EA7DA98029BD33B095E5E1A2FD /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Auth0/Logger.swift; sourceTree = "<group>"; };
+		600E9DC226DCAF5EB294E1D256D7623A /* SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleKeychain.h; path = SimpleKeychain/SimpleKeychain.h; sourceTree = "<group>"; };
+		644525E42ECF22B336AAFC21440BE3DA /* Pods-GithubConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GithubConnectTests.release.xcconfig"; sourceTree = "<group>"; };
+		64FF886DBF1BA568FA64C26C85798F3D /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Auth0/Response.swift; sourceTree = "<group>"; };
+		6B5F14DEACF6F3740A7B1E9032CEBB08 /* Identity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identity.swift; path = Auth0/Identity.swift; sourceTree = "<group>"; };
+		6E51AEC1AEFD646299AA84877AFAC5D9 /* Pods-GithubConnectTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GithubConnectTests-Info.plist"; sourceTree = "<group>"; };
+		7097FFACB7A3166B090BA6FED88E4528 /* Pods-GithubConnectUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GithubConnectUITests-Info.plist"; sourceTree = "<group>"; };
+		7BA2894BC380D86703176C37E7188EED /* CredentialsManagerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsManagerError.swift; path = Auth0/CredentialsManagerError.swift; sourceTree = "<group>"; };
+		7FBB60A69322DB3E8A6707A46F7EFA24 /* SafariSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariSession.swift; path = Auth0/SafariSession.swift; sourceTree = "<group>"; };
+		822594FA67B241E7D93E5CEF429A7DDA /* Pods-GithubConnectUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GithubConnectUITests-umbrella.h"; sourceTree = "<group>"; };
+		84B9AC4C4C4EB70174491E3FA05782DE /* Loggable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loggable.swift; path = Auth0/Loggable.swift; sourceTree = "<group>"; };
+		87D289B72038B0C047A73B57035F1581 /* A0SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SimpleKeychain.h; path = SimpleKeychain/A0SimpleKeychain.h; sourceTree = "<group>"; };
+		897228656071410894C0F071A1B63FB7 /* Pods-GithubConnect-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GithubConnect-frameworks.sh"; sourceTree = "<group>"; };
+		8C34BCD363C47233EA81741A07D4684A /* Auth0Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0Error.swift; path = Auth0/Auth0Error.swift; sourceTree = "<group>"; };
+		8C4E62E8902B7897364A6335D8AC0F1D /* SimpleKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-prefix.pch"; sourceTree = "<group>"; };
+		8FCFB59A658962773E81E7A60EE3A99A /* A0SimpleKeychain+KeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0SimpleKeychain+KeyPair.m"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.m"; sourceTree = "<group>"; };
+		91B681C97F59CBF3C1CF6325671B8D95 /* _ObjectiveManagementAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveManagementAPI.swift; path = Auth0/_ObjectiveManagementAPI.swift; sourceTree = "<group>"; };
+		96D835258BAA4C32BE30BB01E8A6EA0F /* Pods-GithubConnectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GithubConnectTests.modulemap"; sourceTree = "<group>"; };
+		9793DC516EDC683F447425669649C334 /* Pods_GithubConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GithubConnect.framework; path = "Pods-GithubConnect.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A95E2D5A6C0C668721CC01BD42A205 /* SilentSafariViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SilentSafariViewController.swift; path = Auth0/SilentSafariViewController.swift; sourceTree = "<group>"; };
+		9A026654E444A6A54701C012315B93DE /* ManagementError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManagementError.swift; path = Auth0/ManagementError.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A123DF795BC68E1F9D2047709DC6158C /* Auth0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Auth0-dummy.m"; sourceTree = "<group>"; };
+		A1899E6D63D8349876F542FA1ECE7419 /* NSURLComponents+OAuth2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLComponents+OAuth2.swift"; path = "Auth0/NSURLComponents+OAuth2.swift"; sourceTree = "<group>"; };
+		A2C05A0973D894441FB2EE5BF641383F /* WebAuthError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAuthError.swift; path = Auth0/WebAuthError.swift; sourceTree = "<group>"; };
+		A948C7437C979EBCA3E332DBF574235C /* Pods-GithubConnect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GithubConnect-Info.plist"; sourceTree = "<group>"; };
+		A9694C31DF276CACB808A54098E888B4 /* Auth0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Auth0-prefix.pch"; sourceTree = "<group>"; };
+		AE207975FE0BE56027FE1B9BEAE56EDA /* SimpleKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF88D221917366D2890699DDD13CFFC8 /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Auth0/Users.swift; sourceTree = "<group>"; };
+		B044122D2FBCF59B353F89BC9A79E5AA /* Pods-GithubConnectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GithubConnectTests-umbrella.h"; sourceTree = "<group>"; };
+		B0F9B0D302BEABF3782436C68DDB1EB3 /* Auth0Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0Authentication.swift; path = Auth0/Auth0Authentication.swift; sourceTree = "<group>"; };
+		B36C668E3241413DF73C0C32820B69AB /* UserInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = Auth0/UserInfo.swift; sourceTree = "<group>"; };
+		B57B8BE25D40E9BDD9666A6BAFCE4120 /* Pods-GithubConnect-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GithubConnect-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B60297058E8C8A95606A2821E21B5C71 /* Pods-GithubConnectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GithubConnectTests-dummy.m"; sourceTree = "<group>"; };
+		B7728CD2FB0C2EB83AFC3E1E4B5BD7B1 /* Auth0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Auth0.modulemap; sourceTree = "<group>"; };
+		BE71FFBED18A32C089FD28B794E5B638 /* CredentialsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsManager.swift; path = Auth0/CredentialsManager.swift; sourceTree = "<group>"; };
+		C191ED47476D26639D69D7AE817FF5EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C1A5883B5093D9BD53D291C31E55AE47 /* AuthSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthSession.swift; path = Auth0/AuthSession.swift; sourceTree = "<group>"; };
+		C482191E31DE9E27001002A7A1521F84 /* Auth0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Auth0.framework; path = Auth0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C69A3201A56A9E26C80E12ECE9BBD479 /* OAuth2Grant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Grant.swift; path = Auth0/OAuth2Grant.swift; sourceTree = "<group>"; };
+		C76A60EC219B79FE095EEFC5F9B2237F /* UserPatchAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserPatchAttributes.swift; path = Auth0/UserPatchAttributes.swift; sourceTree = "<group>"; };
+		C7B1484B9BFB888B1D45783EC390AE3E /* A0SimpleKeychain+KeyPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "A0SimpleKeychain+KeyPair.h"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.h"; sourceTree = "<group>"; };
+		CA7818A4EBB0DD78AFCB1CFD9A29B3AB /* Credentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = Auth0/Credentials.swift; sourceTree = "<group>"; };
+		D14BFE5F09D66DD5EA4027E2EC31FDDF /* Pods-GithubConnectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GithubConnectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D37D93E393346CBAC3786B32CC3E9DF7 /* SimpleKeychain-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleKeychain-Info.plist"; sourceTree = "<group>"; };
+		D80093C0A6AC274540E8E24859A6C06D /* Pods-GithubConnectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GithubConnectUITests.modulemap"; sourceTree = "<group>"; };
+		D95A2B5AABBA0AC75FAE73297E2D83AE /* SimpleKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleKeychain.modulemap; sourceTree = "<group>"; };
+		D9749AAF28ADB1E8B77E3D27B9A94F91 /* SafariWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariWebAuth.swift; path = Auth0/SafariWebAuth.swift; sourceTree = "<group>"; };
+		DA37DF38518EC05EC89CF40558FEF8EF /* Auth0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0.swift; path = Auth0/Auth0.swift; sourceTree = "<group>"; };
+		DA5C485CD558DB2B69E96B222AB2CE44 /* _ObjectiveWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveWebAuth.swift; path = Auth0/_ObjectiveWebAuth.swift; sourceTree = "<group>"; };
+		DF1D773DF867464782EEFEE15D52EEB8 /* Pods-GithubConnect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GithubConnect.modulemap"; sourceTree = "<group>"; };
+		E2341A9DDB40C34D6D0ADA024CC5E75F /* NSData+URLSafe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSData+URLSafe.swift"; path = "Auth0/NSData+URLSafe.swift"; sourceTree = "<group>"; };
+		E3CEAEEC3021D707C2D44396BC9E734B /* NativeAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeAuth.swift; path = Auth0/NativeAuth.swift; sourceTree = "<group>"; };
+		E567002415BD04A631575219BAC817B8 /* Pods-GithubConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GithubConnect.release.xcconfig"; sourceTree = "<group>"; };
+		E6831F92AE5F3DDE18C998C60C8B41B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E93101036E89F8BC015AF7D600E59165 /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Auth0/Authentication.swift; sourceTree = "<group>"; };
+		E960163754C37768A2FBDC8A86793D89 /* Pods-GithubConnect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GithubConnect-umbrella.h"; sourceTree = "<group>"; };
+		EB361DEDED9C5EE9E0CEC6CE30B2B221 /* NSError+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSError+Helper.swift"; path = "Auth0/NSError+Helper.swift"; sourceTree = "<group>"; };
+		EB3DE7393F6745B13F3944D395635C80 /* SimpleKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-umbrella.h"; sourceTree = "<group>"; };
+		ED4B1025BCDC723591723C8A518FDD79 /* A0ChallengeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0ChallengeGenerator.m; path = Auth0/A0ChallengeGenerator.m; sourceTree = "<group>"; };
+		EDD7967CE68B3B58D299EF5288DF929E /* NSURL+Auth0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+Auth0.swift"; path = "Auth0/NSURL+Auth0.swift"; sourceTree = "<group>"; };
+		EE668037A2AEDF70DE3D1B64208DAE90 /* Pods-GithubConnectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GithubConnectTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F0B4B1DF071CCEB408EB60BD9EBB91E0 /* BioAuthentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BioAuthentication.swift; path = Auth0/BioAuthentication.swift; sourceTree = "<group>"; };
+		F1E3E87C99ACECE39F97CA97AD901DD3 /* Auth0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Auth0.h; path = Auth0/Auth0.h; sourceTree = "<group>"; };
+		F2C982884387B4E9953492F323E89934 /* Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Requestable.swift; path = Auth0/Requestable.swift; sourceTree = "<group>"; };
+		F9F1B0A9F597E824DC2FE01245AD146E /* JSONObjectPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONObjectPayload.swift; path = Auth0/JSONObjectPayload.swift; sourceTree = "<group>"; };
+		FA1569CF6FEC20BEA8A0E3A353F9926A /* Pods-GithubConnect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GithubConnect-dummy.m"; sourceTree = "<group>"; };
+		FBB8C4AFCB6C405D374B9EAFE7A54E60 /* Profile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Auth0/Profile.swift; sourceTree = "<group>"; };
+		FD495B050B7E38D38406B24491ADB5FF /* Pods-GithubConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GithubConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF6524F31A9E11BFAE657F171666607E /* ControllerModalPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControllerModalPresenter.swift; path = Auth0/ControllerModalPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EFB9A23C0E6B1EAAA83ABC358741F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A81BAD44A4B2F85DA3F053D75A2428E /* Foundation.framework in Frameworks */,
+				5F2D4A1E83FC2CA9D36C463DEDB5E54C /* LocalAuthentication.framework in Frameworks */,
+				76928BBAAB9196F9E02D6A4CA31D8700 /* SafariServices.framework in Frameworks */,
+				0277A4790550C9885A6A0FC8B05B4C8F /* SimpleKeychain.framework in Frameworks */,
+				84266AD673AC1879458C37464A5B104E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F189CB2F5173580C832E4CD9BA4FD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D26509839BF8C3F462EC660EA64AF81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A5F8B957367F93350E7F4CDAF7F463 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3081B9F899160D5B384D1D321CA0F584 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D692FF9866A11642560178B1EAA0C5FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BCF4F199AA62337E0488226F5BE7A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7275976D270D5150419BB97406838F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CC922E98D39AAB859A03EF78DE6A78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011E79B1B249F1D3BEAE999B0C544DC1 /* Pods-GithubConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				96D835258BAA4C32BE30BB01E8A6EA0F /* Pods-GithubConnectTests.modulemap */,
+				3661D51CF686BEDEB5BE2714543AE9C1 /* Pods-GithubConnectTests-acknowledgements.markdown */,
+				EE668037A2AEDF70DE3D1B64208DAE90 /* Pods-GithubConnectTests-acknowledgements.plist */,
+				B60297058E8C8A95606A2821E21B5C71 /* Pods-GithubConnectTests-dummy.m */,
+				6E51AEC1AEFD646299AA84877AFAC5D9 /* Pods-GithubConnectTests-Info.plist */,
+				B044122D2FBCF59B353F89BC9A79E5AA /* Pods-GithubConnectTests-umbrella.h */,
+				005C5D39A903BF317368995779C16B12 /* Pods-GithubConnectTests.debug.xcconfig */,
+				644525E42ECF22B336AAFC21440BE3DA /* Pods-GithubConnectTests.release.xcconfig */,
+			);
+			name = "Pods-GithubConnectTests";
+			path = "Target Support Files/Pods-GithubConnectTests";
+			sourceTree = "<group>";
+		};
+		062BA98886E57621DD296E40A96A6FD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C482191E31DE9E27001002A7A1521F84 /* Auth0.framework */,
+				9793DC516EDC683F447425669649C334 /* Pods_GithubConnect.framework */,
+				3503284DCF92939B51EED12185BFFF12 /* Pods_GithubConnectTests.framework */,
+				1E7FDFB8D0239CD31BE2F5C5F3599EA7 /* Pods_GithubConnectUITests.framework */,
+				4D721B27826FB5D8E71CCF3B102822DA /* SimpleKeychain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26972758BB79DDBE17675859327446AC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F2BB326BBF2CFE00D999D389DCC1D95 /* Pods-GithubConnect */,
+				011E79B1B249F1D3BEAE999B0C544DC1 /* Pods-GithubConnectTests */,
+				7EFBE68F60A4880DA2170944637ED0F6 /* Pods-GithubConnectUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4098FAD869A9AD364EEDC874B3B24218 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D95A2B5AABBA0AC75FAE73297E2D83AE /* SimpleKeychain.modulemap */,
+				0546C171B272AA8F86269A3C9A880394 /* SimpleKeychain.xcconfig */,
+				488B2CDF831866937A4D5F18F3BB178F /* SimpleKeychain-dummy.m */,
+				D37D93E393346CBAC3786B32CC3E9DF7 /* SimpleKeychain-Info.plist */,
+				8C4E62E8902B7897364A6335D8AC0F1D /* SimpleKeychain-prefix.pch */,
+				EB3DE7393F6745B13F3944D395635C80 /* SimpleKeychain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimpleKeychain";
+			sourceTree = "<group>";
+		};
+		44904E3CECCBE5C71BA93143FF76284B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7728CD2FB0C2EB83AFC3E1E4B5BD7B1 /* Auth0.modulemap */,
+				0B866626B306058F865697B6D6E9BCB8 /* Auth0.xcconfig */,
+				A123DF795BC68E1F9D2047709DC6158C /* Auth0-dummy.m */,
+				2CFDA723D4EC0D3851894A4494797A25 /* Auth0-Info.plist */,
+				A9694C31DF276CACB808A54098E888B4 /* Auth0-prefix.pch */,
+				4F4B707993E8CA11208DC76A2C5DDA31 /* Auth0-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Auth0";
+			sourceTree = "<group>";
+		};
+		53E78F58046A53B6A200643D1E7DE631 /* Auth0 */ = {
+			isa = PBXGroup;
+			children = (
+				4F31CDEDF10D8AEE44B4A992ACBB37EB /* _ObjectiveAuthenticationAPI.swift */,
+				91B681C97F59CBF3C1CF6325671B8D95 /* _ObjectiveManagementAPI.swift */,
+				DA5C485CD558DB2B69E96B222AB2CE44 /* _ObjectiveWebAuth.swift */,
+				0948AF0C1096282A838351067F297E96 /* A0ChallengeGenerator.h */,
+				ED4B1025BCDC723591723C8A518FDD79 /* A0ChallengeGenerator.m */,
+				F1E3E87C99ACECE39F97CA97AD901DD3 /* Auth0.h */,
+				DA37DF38518EC05EC89CF40558FEF8EF /* Auth0.swift */,
+				B0F9B0D302BEABF3782436C68DDB1EB3 /* Auth0Authentication.swift */,
+				8C34BCD363C47233EA81741A07D4684A /* Auth0Error.swift */,
+				E93101036E89F8BC015AF7D600E59165 /* Authentication.swift */,
+				2BB090A52141BAD3669E298D3422C74D /* AuthenticationError.swift */,
+				0DBA0E9B2414FF45349EBAF853003339 /* AuthProvider.swift */,
+				C1A5883B5093D9BD53D291C31E55AE47 /* AuthSession.swift */,
+				4057A948DC3DAFBDE8EA153568710F63 /* AuthTransaction.swift */,
+				F0B4B1DF071CCEB408EB60BD9EBB91E0 /* BioAuthentication.swift */,
+				FF6524F31A9E11BFAE657F171666607E /* ControllerModalPresenter.swift */,
+				CA7818A4EBB0DD78AFCB1CFD9A29B3AB /* Credentials.swift */,
+				BE71FFBED18A32C089FD28B794E5B638 /* CredentialsManager.swift */,
+				7BA2894BC380D86703176C37E7188EED /* CredentialsManagerError.swift */,
+				07839450BF23F52920F2F8F449305724 /* Date.swift */,
+				25B9B657706F94B817101A86E6DA685C /* Handlers.swift */,
+				6B5F14DEACF6F3740A7B1E9032CEBB08 /* Identity.swift */,
+				F9F1B0A9F597E824DC2FE01245AD146E /* JSONObjectPayload.swift */,
+				84B9AC4C4C4EB70174491E3FA05782DE /* Loggable.swift */,
+				600BF6EA7DA98029BD33B095E5E1A2FD /* Logger.swift */,
+				2C096BC00E45DDB0502649BABC438741 /* Management.swift */,
+				9A026654E444A6A54701C012315B93DE /* ManagementError.swift */,
+				E3CEAEEC3021D707C2D44396BC9E734B /* NativeAuth.swift */,
+				E2341A9DDB40C34D6D0ADA024CC5E75F /* NSData+URLSafe.swift */,
+				EB361DEDED9C5EE9E0CEC6CE30B2B221 /* NSError+Helper.swift */,
+				EDD7967CE68B3B58D299EF5288DF929E /* NSURL+Auth0.swift */,
+				A1899E6D63D8349876F542FA1ECE7419 /* NSURLComponents+OAuth2.swift */,
+				C69A3201A56A9E26C80E12ECE9BBD479 /* OAuth2Grant.swift */,
+				FBB8C4AFCB6C405D374B9EAFE7A54E60 /* Profile.swift */,
+				1CE3455F71A45487F9220EEBE669A283 /* Request.swift */,
+				F2C982884387B4E9953492F323E89934 /* Requestable.swift */,
+				64FF886DBF1BA568FA64C26C85798F3D /* Response.swift */,
+				54FF9B95D2CCBF1F7E0CEAF8B4D726F9 /* ResponseType.swift */,
+				5986BAC0119CED36C36DF885E71AB29E /* Result.swift */,
+				5554186FC4FA22819EDDF1CFE2F661D3 /* SafariAuthenticationCallback.swift */,
+				0397F46B5DC27D2DE17DE3E97D34C9A7 /* SafariAuthenticationSession.swift */,
+				7FBB60A69322DB3E8A6707A46F7EFA24 /* SafariSession.swift */,
+				D9749AAF28ADB1E8B77E3D27B9A94F91 /* SafariWebAuth.swift */,
+				97A95E2D5A6C0C668721CC01BD42A205 /* SilentSafariViewController.swift */,
+				2ACFEA4A5E45ACC9A5B91377425C3C71 /* Telemetry.swift */,
+				318F7F886789B3B37FC901860CDC2CB4 /* TransactionStore.swift */,
+				B36C668E3241413DF73C0C32820B69AB /* UserInfo.swift */,
+				C76A60EC219B79FE095EEFC5F9B2237F /* UserPatchAttributes.swift */,
+				AF88D221917366D2890699DDD13CFFC8 /* Users.swift */,
+				53DDC6D76F90513736A08E07DAB1F042 /* WebAuth.swift */,
+				A2C05A0973D894441FB2EE5BF641383F /* WebAuthError.swift */,
+				44904E3CECCBE5C71BA93143FF76284B /* Support Files */,
+			);
+			name = Auth0;
+			path = Auth0;
+			sourceTree = "<group>";
+		};
+		7EFBE68F60A4880DA2170944637ED0F6 /* Pods-GithubConnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D80093C0A6AC274540E8E24859A6C06D /* Pods-GithubConnectUITests.modulemap */,
+				2A2F2A1B204F7C761A700C39AC9F6D42 /* Pods-GithubConnectUITests-acknowledgements.markdown */,
+				1E8E62C8B9D88A11BC0374ED54435ACB /* Pods-GithubConnectUITests-acknowledgements.plist */,
+				3D7397161F1286510AA3F3EDD54106FB /* Pods-GithubConnectUITests-dummy.m */,
+				7097FFACB7A3166B090BA6FED88E4528 /* Pods-GithubConnectUITests-Info.plist */,
+				822594FA67B241E7D93E5CEF429A7DDA /* Pods-GithubConnectUITests-umbrella.h */,
+				D14BFE5F09D66DD5EA4027E2EC31FDDF /* Pods-GithubConnectUITests.debug.xcconfig */,
+				FD495B050B7E38D38406B24491ADB5FF /* Pods-GithubConnectUITests.release.xcconfig */,
+			);
+			name = "Pods-GithubConnectUITests";
+			path = "Target Support Files/Pods-GithubConnectUITests";
+			sourceTree = "<group>";
+		};
+		8F2BB326BBF2CFE00D999D389DCC1D95 /* Pods-GithubConnect */ = {
+			isa = PBXGroup;
+			children = (
+				DF1D773DF867464782EEFEE15D52EEB8 /* Pods-GithubConnect.modulemap */,
+				B57B8BE25D40E9BDD9666A6BAFCE4120 /* Pods-GithubConnect-acknowledgements.markdown */,
+				2D77F2883E99F7AD5C50B7B0395455C7 /* Pods-GithubConnect-acknowledgements.plist */,
+				FA1569CF6FEC20BEA8A0E3A353F9926A /* Pods-GithubConnect-dummy.m */,
+				897228656071410894C0F071A1B63FB7 /* Pods-GithubConnect-frameworks.sh */,
+				A948C7437C979EBCA3E332DBF574235C /* Pods-GithubConnect-Info.plist */,
+				E960163754C37768A2FBDC8A86793D89 /* Pods-GithubConnect-umbrella.h */,
+				383F06164AFD1DC60D29A15E6067D4AF /* Pods-GithubConnect.debug.xcconfig */,
+				E567002415BD04A631575219BAC817B8 /* Pods-GithubConnect.release.xcconfig */,
+			);
+			name = "Pods-GithubConnect";
+			path = "Target Support Files/Pods-GithubConnect";
+			sourceTree = "<group>";
+		};
+		9E0DBAB2172C984ED9D8AC6268DD16E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53E78F58046A53B6A200643D1E7DE631 /* Auth0 */,
+				E3B9240645BC1CBC3318027CB0D942B7 /* SimpleKeychain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A66551FF86D888BEC96ED1B134A5E699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE207975FE0BE56027FE1B9BEAE56EDA /* SimpleKeychain.framework */,
+				FE1873EECCA8CE0CBBFD20F38996857B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A66551FF86D888BEC96ED1B134A5E699 /* Frameworks */,
+				9E0DBAB2172C984ED9D8AC6268DD16E7 /* Pods */,
+				062BA98886E57621DD296E40A96A6FD8 /* Products */,
+				26972758BB79DDBE17675859327446AC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E3B9240645BC1CBC3318027CB0D942B7 /* SimpleKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				87D289B72038B0C047A73B57035F1581 /* A0SimpleKeychain.h */,
+				2B5DA68702A47AF4005CBC2D02F469A3 /* A0SimpleKeychain.m */,
+				C7B1484B9BFB888B1D45783EC390AE3E /* A0SimpleKeychain+KeyPair.h */,
+				8FCFB59A658962773E81E7A60EE3A99A /* A0SimpleKeychain+KeyPair.m */,
+				600E9DC226DCAF5EB294E1D256D7623A /* SimpleKeychain.h */,
+				4098FAD869A9AD364EEDC874B3B24218 /* Support Files */,
+			);
+			name = SimpleKeychain;
+			path = SimpleKeychain;
+			sourceTree = "<group>";
+		};
+		FE1873EECCA8CE0CBBFD20F38996857B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C191ED47476D26639D69D7AE817FF5EE /* Foundation.framework */,
+				3F6E03453E82281E12FC8313DDB2E386 /* LocalAuthentication.framework */,
+				3CF286D5B035D3992EACB4D4A8E40402 /* SafariServices.framework */,
+				E6831F92AE5F3DDE18C998C60C8B41B8 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06F6904FC81E615B580B79544DB4EA71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37FCA8A33CE839FB0C7A0D0002839FAE /* Pods-GithubConnectUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B551C3230C1469CA0BC6441220FB260 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75465D3E3E9D72FE1505DF41BF5E58A5 /* A0ChallengeGenerator.h in Headers */,
+				6A756A02A5F01FA596D35430FE5977E4 /* Auth0-umbrella.h in Headers */,
+				815613001D576C733FF1DA09F379587C /* Auth0.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C921C9853661267727C2AFB548403C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8856E7FA3CCB91185DAD9F90F3AC05E5 /* A0SimpleKeychain+KeyPair.h in Headers */,
+				B83178B3BF3A6EE3A28E0AE70C6C2DDA /* A0SimpleKeychain.h in Headers */,
+				4AACFF9ECA1D350A4FC368560600D1F3 /* SimpleKeychain-umbrella.h in Headers */,
+				E5D69A1C1B4A829CBBC2865EF032841F /* SimpleKeychain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69AE899C18728B7ECE221EFDF1799C4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512807B3607345EEA2FF0CD3A546592E /* Pods-GithubConnect-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F788E4DE5BF55566E2B3784B36D4D801 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7D2E081F7129FD3614661C78D6C9A8 /* Pods-GithubConnectTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1775F3D547A3D1360B8FD46F0BC0B7A6 /* Pods-GithubConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 770CA643CF18E0792706D95EDE89D7C3 /* Build configuration list for PBXNativeTarget "Pods-GithubConnect" */;
+			buildPhases = (
+				69AE899C18728B7ECE221EFDF1799C4E /* Headers */,
+				3C2A2BB98D5906142884AECCB35A5437 /* Sources */,
+				E7275976D270D5150419BB97406838F0 /* Frameworks */,
+				105BFBA3465EDFD161FF33A2CFC0F51D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FE4A8EAB5A75DD9E552178A11BC7C2C /* PBXTargetDependency */,
+				5BF75E22CE5A122AD6989E4D744893B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-GithubConnect";
+			productName = "Pods-GithubConnect";
+			productReference = 9793DC516EDC683F447425669649C334 /* Pods_GithubConnect.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61A8675CA69EB54C341552FFA49ECB26 /* SimpleKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8302639B4FA4F73C9635233D06C6C27 /* Build configuration list for PBXNativeTarget "SimpleKeychain" */;
+			buildPhases = (
+				41C921C9853661267727C2AFB548403C /* Headers */,
+				8F2DD953423798E1B188E2592548F37C /* Sources */,
+				D692FF9866A11642560178B1EAA0C5FA /* Frameworks */,
+				67E0A6509F983B235814018A34421270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleKeychain;
+			productName = SimpleKeychain;
+			productReference = 4D721B27826FB5D8E71CCF3B102822DA /* SimpleKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D5C23BD1F5419250A6934E403A7821C /* Pods-GithubConnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37643C31F3D1FE2D8E90DE35C372122 /* Build configuration list for PBXNativeTarget "Pods-GithubConnectUITests" */;
+			buildPhases = (
+				06F6904FC81E615B580B79544DB4EA71 /* Headers */,
+				20DEF66408B58C654E4AACA0DD04B0AD /* Sources */,
+				A8A5F8B957367F93350E7F4CDAF7F463 /* Frameworks */,
+				B42FF29E8511D051E6BBD9ADEDE42080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1519573CD1A569CEF72EB4DE0B9D6D5F /* PBXTargetDependency */,
+			);
+			name = "Pods-GithubConnectUITests";
+			productName = "Pods-GithubConnectUITests";
+			productReference = 1E7FDFB8D0239CD31BE2F5C5F3599EA7 /* Pods_GithubConnectUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5B35CB162BA8CFB85441FB7DDA3D2AB /* Pods-GithubConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63962878A0457ADC25FE52A3202FF9C0 /* Build configuration list for PBXNativeTarget "Pods-GithubConnectTests" */;
+			buildPhases = (
+				F788E4DE5BF55566E2B3784B36D4D801 /* Headers */,
+				64E33E3D5F04D91E63D874606F2FC6AD /* Sources */,
+				43F189CB2F5173580C832E4CD9BA4FD6 /* Frameworks */,
+				228DE1AB8D040B593D6DB0711380F8BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC84D5A84FD5441E378752C9FECF5C64 /* PBXTargetDependency */,
+			);
+			name = "Pods-GithubConnectTests";
+			productName = "Pods-GithubConnectTests";
+			productReference = 3503284DCF92939B51EED12185BFFF12 /* Pods_GithubConnectTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB4CE40D56D9FD503276EA88625B0981 /* Auth0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13897ADBC6C9E2F75E989DCF2B6B12CE /* Build configuration list for PBXNativeTarget "Auth0" */;
+			buildPhases = (
+				2B551C3230C1469CA0BC6441220FB260 /* Headers */,
+				54F63DF1C0BD157620538D31FA539BFB /* Sources */,
+				2EFB9A23C0E6B1EAAA83ABC358741F94 /* Frameworks */,
+				1B9ABAF5F6CABB289608AC2610811DB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0280779516C2FCB4FABAAEC09FEF75E /* PBXTargetDependency */,
+			);
+			name = Auth0;
+			productName = Auth0;
+			productReference = C482191E31DE9E27001002A7A1521F84 /* Auth0.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 062BA98886E57621DD296E40A96A6FD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB4CE40D56D9FD503276EA88625B0981 /* Auth0 */,
+				1775F3D547A3D1360B8FD46F0BC0B7A6 /* Pods-GithubConnect */,
+				C5B35CB162BA8CFB85441FB7DDA3D2AB /* Pods-GithubConnectTests */,
+				7D5C23BD1F5419250A6934E403A7821C /* Pods-GithubConnectUITests */,
+				61A8675CA69EB54C341552FFA49ECB26 /* SimpleKeychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		105BFBA3465EDFD161FF33A2CFC0F51D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9ABAF5F6CABB289608AC2610811DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228DE1AB8D040B593D6DB0711380F8BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67E0A6509F983B235814018A34421270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42FF29E8511D051E6BBD9ADEDE42080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20DEF66408B58C654E4AACA0DD04B0AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68FBB31889F3D86780A2E55BF43B777 /* Pods-GithubConnectUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C2A2BB98D5906142884AECCB35A5437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F539131F78FAEAC350B4258474A8EE /* Pods-GithubConnect-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F63DF1C0BD157620538D31FA539BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BAF2689B7C3B5EBB3C28A8D0B96F502 /* _ObjectiveAuthenticationAPI.swift in Sources */,
+				3C6265F37507DDD88097BFDCDC18010F /* _ObjectiveManagementAPI.swift in Sources */,
+				FA996165542389E8AB1521ABF09E0D1F /* _ObjectiveWebAuth.swift in Sources */,
+				34327D4D760B9D0C759C1B98F459326E /* A0ChallengeGenerator.m in Sources */,
+				2D7798921216EB918BB3111009021E99 /* Auth0-dummy.m in Sources */,
+				480F559D2AEDD17CED11DA4E74DF33AE /* Auth0.swift in Sources */,
+				BA0912D93368F3E15B162B7A8663577B /* Auth0Authentication.swift in Sources */,
+				F44163A660DDF323E6D48ABC552D154E /* Auth0Error.swift in Sources */,
+				A67B3513A3790974948E5D2F1A9C1277 /* Authentication.swift in Sources */,
+				A645FB360FF4A041DDE2DE92554B0D78 /* AuthenticationError.swift in Sources */,
+				64B45E77A994F1D38D98B44015F72838 /* AuthProvider.swift in Sources */,
+				47BCA3A2475C1A790CBB1E364F376D93 /* AuthSession.swift in Sources */,
+				B5148E705B70F73A12CDF406F01209AD /* AuthTransaction.swift in Sources */,
+				439D085597024C1139FD3614D9C65BB0 /* BioAuthentication.swift in Sources */,
+				E0853938BC1F1C1F96A4C47F330EBA1E /* ControllerModalPresenter.swift in Sources */,
+				B9A8B54617C74E4231627A4EA0BB5D53 /* Credentials.swift in Sources */,
+				48982F756C81C11B4BFD64C0F957D81B /* CredentialsManager.swift in Sources */,
+				30B4D1C14188E904B707CB0C5797857E /* CredentialsManagerError.swift in Sources */,
+				D9DD1076A2E60142BE41AEC004EB2BBD /* Date.swift in Sources */,
+				86CCDC70A449C40FBB34A4C69F73D2AA /* Handlers.swift in Sources */,
+				683E5050572440F9BC27805579A51CD0 /* Identity.swift in Sources */,
+				428F673B1529BFDB126DF14391E6D840 /* JSONObjectPayload.swift in Sources */,
+				315C3AF16DE36CF86A2E9FAC231E97DD /* Loggable.swift in Sources */,
+				EED1A47CD25F9C958ACAD2850C22D9F3 /* Logger.swift in Sources */,
+				0D69B288E3DF9EC529ED53D58993D261 /* Management.swift in Sources */,
+				807DD8BA32337CF09209A64897A5A61D /* ManagementError.swift in Sources */,
+				F0F27DC8E50155F4E7867139A591BCA0 /* NativeAuth.swift in Sources */,
+				04ECF5493FD821AF7C6700768C70D103 /* NSData+URLSafe.swift in Sources */,
+				7E969AC89932141AC0EAF175012D386C /* NSError+Helper.swift in Sources */,
+				7CE4565EDB4D17746AA417ADDBE0A4E8 /* NSURL+Auth0.swift in Sources */,
+				89924167915AEC478B35BA1995474418 /* NSURLComponents+OAuth2.swift in Sources */,
+				4A31B167FAAE5AA974316442796FADF9 /* OAuth2Grant.swift in Sources */,
+				CF4B9AAE61EE1A0478EC82703EACC9AF /* Profile.swift in Sources */,
+				77D5D67C7153F40E106A1D525CF013DC /* Request.swift in Sources */,
+				CE39BFBA829AC058029986F8FA7712BF /* Requestable.swift in Sources */,
+				8E76E70FB2A9B7C51DE7D97921C411BD /* Response.swift in Sources */,
+				96F0FE606D53294867D9D3823D5B91DF /* ResponseType.swift in Sources */,
+				146DB6CD4E0C24807716DF21BEC65291 /* Result.swift in Sources */,
+				7E2C6240CF37669AAFD747AF8542FF0E /* SafariAuthenticationCallback.swift in Sources */,
+				843D602F85E447205B7E6EBE186097FB /* SafariAuthenticationSession.swift in Sources */,
+				1F00319D01F35714E76535CEF185CD1A /* SafariSession.swift in Sources */,
+				426261FD4587C8CEA5A4ACE737F32677 /* SafariWebAuth.swift in Sources */,
+				6BC30DC29B04038247927EA95BF2D11E /* SilentSafariViewController.swift in Sources */,
+				43B51DA8FC1F6F9CCA4DA4A88246AD73 /* Telemetry.swift in Sources */,
+				D3C8FD3AD8AC1AF9A03A16B85FF08BCB /* TransactionStore.swift in Sources */,
+				D01976371EC3556D39619630A2A136C8 /* UserInfo.swift in Sources */,
+				2CDCDAF8532BD25895575D799C6D6D23 /* UserPatchAttributes.swift in Sources */,
+				87C0FD66AA3D13B82B0C1F73A200AB70 /* Users.swift in Sources */,
+				58A0662F942C33CFC381C7491788E9FC /* WebAuth.swift in Sources */,
+				05F546945A9F17AF3C79FF32BCA35003 /* WebAuthError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64E33E3D5F04D91E63D874606F2FC6AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D202972DC54DB7DC1C56312136421945 /* Pods-GithubConnectTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2DD953423798E1B188E2592548F37C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90015E19F66DF35D3BF298A92649CD66 /* A0SimpleKeychain+KeyPair.m in Sources */,
+				35259AE0BE931E8309F35ADFDA395E64 /* A0SimpleKeychain.m in Sources */,
+				5B9EB49BD07D384C756CF8AE763D8990 /* SimpleKeychain-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1519573CD1A569CEF72EB4DE0B9D6D5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GithubConnect";
+			target = 1775F3D547A3D1360B8FD46F0BC0B7A6 /* Pods-GithubConnect */;
+			targetProxy = AF71A1D25DC58C82AA48620D074B6A18 /* PBXContainerItemProxy */;
+		};
+		2FE4A8EAB5A75DD9E552178A11BC7C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Auth0;
+			target = FB4CE40D56D9FD503276EA88625B0981 /* Auth0 */;
+			targetProxy = DDE53E3E8C5CF35801A616552125B294 /* PBXContainerItemProxy */;
+		};
+		5BF75E22CE5A122AD6989E4D744893B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = 61A8675CA69EB54C341552FFA49ECB26 /* SimpleKeychain */;
+			targetProxy = 299F42802B2AF2558605471F929BD763 /* PBXContainerItemProxy */;
+		};
+		A0280779516C2FCB4FABAAEC09FEF75E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = 61A8675CA69EB54C341552FFA49ECB26 /* SimpleKeychain */;
+			targetProxy = E744955F8527BF1D4AB5565BBD1F7441 /* PBXContainerItemProxy */;
+		};
+		CC84D5A84FD5441E378752C9FECF5C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GithubConnect";
+			target = 1775F3D547A3D1360B8FD46F0BC0B7A6 /* Pods-GithubConnect */;
+			targetProxy = 4BC750DEABA9AF7718A1A954AEB130A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BDB95BEE5E555F624992D822083E649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD495B050B7E38D38406B24491ADB5FF /* Pods-GithubConnectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GithubConnectUITests/Pods-GithubConnectUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GithubConnectUITests/Pods-GithubConnectUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3F0925A61CBC008916D27EBADA1BF8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 383F06164AFD1DC60D29A15E6067D4AF /* Pods-GithubConnect.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GithubConnect/Pods-GithubConnect-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GithubConnect/Pods-GithubConnect.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5186334501590B1A13DEF122370DD6C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D14BFE5F09D66DD5EA4027E2EC31FDDF /* Pods-GithubConnectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GithubConnectUITests/Pods-GithubConnectUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GithubConnectUITests/Pods-GithubConnectUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A6D3F8950C1039F88317A967FDF6DE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E567002415BD04A631575219BAC817B8 /* Pods-GithubConnect.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GithubConnect/Pods-GithubConnect-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GithubConnect/Pods-GithubConnect.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D38DAE2596A4BA56933E30177DAB276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 005C5D39A903BF317368995779C16B12 /* Pods-GithubConnectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GithubConnectTests/Pods-GithubConnectTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GithubConnectTests/Pods-GithubConnectTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B7B033BB09077B188215D0CBD60F370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0546C171B272AA8F86269A3C9A880394 /* SimpleKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SimpleKeychain;
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9C07C7985895CE833977AF4E00F3D2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 644525E42ECF22B336AAFC21440BE3DA /* Pods-GithubConnectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GithubConnectTests/Pods-GithubConnectTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GithubConnectTests/Pods-GithubConnectTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D682A879EF010A931E22E5D9DF629D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0546C171B272AA8F86269A3C9A880394 /* SimpleKeychain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SimpleKeychain;
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E79BFFA9AA49E9C656B03B877C8C22B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B866626B306058F865697B6D6E9BCB8 /* Auth0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Auth0/Auth0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Auth0/Auth0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Auth0/Auth0.modulemap";
+				PRODUCT_MODULE_NAME = Auth0;
+				PRODUCT_NAME = Auth0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB0BC8122C730906DF5C6A953F4ADE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B866626B306058F865697B6D6E9BCB8 /* Auth0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Auth0/Auth0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Auth0/Auth0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Auth0/Auth0.modulemap";
+				PRODUCT_MODULE_NAME = Auth0;
+				PRODUCT_NAME = Auth0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13897ADBC6C9E2F75E989DCF2B6B12CE /* Build configuration list for PBXNativeTarget "Auth0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79BFFA9AA49E9C656B03B877C8C22B5 /* Debug */,
+				EB0BC8122C730906DF5C6A953F4ADE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63962878A0457ADC25FE52A3202FF9C0 /* Build configuration list for PBXNativeTarget "Pods-GithubConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D38DAE2596A4BA56933E30177DAB276 /* Debug */,
+				A9C07C7985895CE833977AF4E00F3D2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		770CA643CF18E0792706D95EDE89D7C3 /* Build configuration list for PBXNativeTarget "Pods-GithubConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0925A61CBC008916D27EBADA1BF8EF /* Debug */,
+				6A6D3F8950C1039F88317A967FDF6DE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8302639B4FA4F73C9635233D06C6C27 /* Build configuration list for PBXNativeTarget "SimpleKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D682A879EF010A931E22E5D9DF629D81 /* Debug */,
+				9B7B033BB09077B188215D0CBD60F370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37643C31F3D1FE2D8E90DE35C372122 /* Build configuration list for PBXNativeTarget "Pods-GithubConnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5186334501590B1A13DEF122370DD6C2 /* Debug */,
+				0BDB95BEE5E555F624992D822083E649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
