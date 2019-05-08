@@ -1,6 +1,0 @@
-framework module Pods_GithubConnectTests {
-  umbrella header "Pods-GithubConnectTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
